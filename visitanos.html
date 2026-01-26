@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Visítanos | Casa Montecino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-text">CASA MONTECINO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="alebrijes.html">Alebrijes</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="visitanos.html" class="active">Visítanos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title">Encuéntranos en Oaxaca</h2>
+        <div class="visit-grid">
+            <div class="visit-info">
+                <h3>Ubicación del Taller</h3>
+                <p>Estamos ubicados en San Martín Tilcajete, la cuna de los alebrijes en Oaxaca, México.</p>
+                <div class="map-placeholder">
+                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+            </div>
+            <form id="booking-form" class="form-visit">
+                <h3>Reserva una Visita Guiada</h3>
+                <input type="text" placeholder="Nombre completo" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="date" required>
+                <textarea placeholder="¿Algún interés especial? (Ej. Tallado, Pintura)" rows="5"></textarea>
+                <button type="submit" class="btn">Solicitar Cita</button>
+            </form>
+        </div>
+    </div>
+        <footer>
+        <p>&copy; 2024 Casa Montecino - Figuras Talladas en Madera. Oaxaca, México.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

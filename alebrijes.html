@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Alebrijes | Casa Montecino</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-text">CASA MONTECINO</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="alebrijes.html" class="active">Alebrijes</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="visitanos.html">Visítanos</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2 class="section-title">Nuestras Piezas</h2>
+        
+        <div class="filter-group">
+            <button class="filter-btn active" data-filter="todos">Todos</button>
+            <button class="filter-btn" data-filter="misticos">Místicos</button>
+            <button class="filter-btn" data-filter="animales">Animales</button>
+        </div>
+
+        <div class="grid" id="alebrijes-grid">
+            <div class="card" data-cat="misticos">
+                <div class="card-img-box">IMG</div>
+                <h3>Dragón Alado</h3>
+                <p>Fantasía en tonos púrpuras.</p>
+            </div>
+            <div class="card" data-cat="animales">
+                <div class="card-img-box">IMG</div>
+                <h3>Jaguar de Montaña</h3>
+                <p>Tallado en madera de copal.</p>
+            </div>
+            <div class="card" data-cat="misticos">
+                <div class="card-img-box">IMG</div>
+                <h3>Pegaso Oaxaqueño</h3>
+                <p>Decorado con grecas finas.</p>
+            </div>
+        </div>
+    </div>
+
+        <footer>
+        <p>&copy; 2024 Casa Montecino - Figuras Talladas en Madera. Oaxaca, México.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
