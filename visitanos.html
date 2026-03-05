@@ -1,44 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Visítanos | Casa Montecino</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visítanos | Casa Montecino</title>
+  <meta name="description" content="Visita el taller de Casa Montecino en San Martín Tilcajete, Oaxaca. Reserva una visita guiada y conoce el proceso de creación de los alebrijes.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo-text">CASA MONTECINO</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="alebrijes.html">Alebrijes</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="visitanos.html" class="active">Visítanos</a></li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <h2 class="section-title">Encuéntranos en Oaxaca</h2>
-        <div class="visit-grid">
-            <div class="visit-info">
-                <h3>Ubicación del Taller</h3>
-                <p>Estamos ubicados en San Martín Tilcajete, la cuna de los alebrijes en Oaxaca, México.</p>
-                <div class="map-placeholder">
-                    <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300" style="border:0;" allowfullscreen=""></iframe>
-                </div>
-            </div>
-            <form id="booking-form" class="form-visit">
-                <h3>Reserva una Visita Guiada</h3>
-                <input type="text" placeholder="Nombre completo" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <input type="date" required>
-                <textarea placeholder="¿Algún interés especial? (Ej. Tallado, Pintura)" rows="5"></textarea>
-                <button type="submit" class="btn">Solicitar Cita</button>
-            </form>
-        </div>
+  <header id="site-header"></header>
+
+  <!-- ── PAGE HERO ──────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2000');"></div>
+    <div class="page-hero-content">
+      <p class="eyebrow">San Martín Tilcajete · Oaxaca</p>
+      <h1>Visita<br>el Taller</h1>
     </div>
-        <footer>
-        <p>&copy; 2024 Casa Montecino - Figuras Talladas en Madera. Oaxaca, México.</p>
-    </footer>
-    <script src="script.js"></script>
+  </div>
+
+  <!-- ── VISITA ─────────────────────────────────────── -->
+  <section class="container">
+    <h2 class="section-title reveal">Encuéntranos en Oaxaca</h2>
+    <p class="section-subtitle reveal reveal-delay-1">Visita Guiada</p>
+
+    <div class="visit-grid">
+
+      <!-- Columna izquierda: info + mapa -->
+      <div class="visit-info reveal">
+        <h3>El Taller está en<br>San Martín Tilcajete</h3>
+        <p>
+          A solo 28 km de la ciudad de Oaxaca, San Martín Tilcajete es conocida mundialmente como la cuna de los alebrijes modernos. Aquí, la familia Montecino abre sus puertas para que puedas vivir el proceso de primera mano.
+        </p>
+
+        <div class="visit-details">
+          <div class="detail-item">
+            <span class="detail-icon">◎</span>
+            <div>
+              <h5>Dirección</h5>
+              <p>Calle Independencia #12, San Martín Tilcajete,<br>Villa de Zaachila, Oaxaca, México CP 71240</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">◷</span>
+            <div>
+              <h5>Horarios</h5>
+              <p>Lunes a Sábado: 9:00 am – 6:00 pm<br>Domingos: 10:00 am – 2:00 pm</p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">☎</span>
+            <div>
+              <h5>Contacto</h5>
+              <p>
+                <a href="tel:+529511234567" style="color:var(--gold);">+52 951 123 4567</a><br>
+                <a href="mailto:hola@casamontecino.mx" style="color:var(--gold);">hola@casamontecino.mx</a>
+              </p>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✦</span>
+            <div>
+              <h5>La Visita Incluye</h5>
+              <p>Recorrido por el taller, demostración de tallado y pintura, y un descuento del 10% en tu primera compra.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15250.706249957796!2d-96.7265889!3d17.0621345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7223f66300001%3A0x6a053229b3a3a60a!2sSan%20Mart%C3%ADn%20Tilcajete%2C%20Oax.!5e0!3m2!1ses!2smx!4v1690000000000!5m2!1ses!2smx"
+            width="100%"
+            height="100%"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Casa Montecino">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Columna derecha: formulario -->
+      <div class="form-card reveal reveal-delay-2">
+        <h3>Reserva una<br>Visita Guiada</h3>
+        <p class="form-intro">Completa el formulario y nos pondremos en contacto en menos de 24 horas para confirmar tu visita.</p>
+
+        <form id="booking-form" novalidate>
+          <div class="form-field">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana García López" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+          </div>
+          <div class="form-field">
+            <label for="fecha">Fecha preferida de visita</label>
+            <input type="date" id="fecha" name="fecha" required>
+          </div>
+          <div class="form-field">
+            <label for="personas">Número de personas</label>
+            <select id="personas" name="personas">
+              <option value="1">1 persona</option>
+              <option value="2" selected>2 personas</option>
+              <option value="3-5">3 – 5 personas</option>
+              <option value="6-10">6 – 10 personas (grupo)</option>
+              <option value="10+">Más de 10 (tour)</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="interes">¿Algún interés especial?</label>
+            <textarea id="interes" name="interes" placeholder="Ej. me interesa ver el proceso de pintura, quiero una pieza personalizada, traigo niños…" rows="4"></textarea>
+          </div>
+          <button type="submit" class="btn btn-solid" style="width:100%; text-align:center;">
+            Enviar Solicitud
+          </button>
+        </form>
+
+        <!-- Mensaje de éxito -->
+        <div class="form-success" id="form-success">
+          <div class="checkmark">✓</div>
+          <h4>¡Solicitud Enviada!</h4>
+          <p>Gracias por tu interés. La familia Montecino te contactará pronto para confirmar tu visita al taller.</p>
+        </div>
+      </div>
+
+    </div><!-- /visit-grid -->
+  </section>
+
+  <!-- ── CÓMO LLEGAR ─────────────────────────────────── -->
+  <section style="background: var(--cream); padding: 80px 5%;">
+    <div style="max-width:1200px; margin:0 auto;">
+      <h2 class="section-title reveal">¿Cómo Llegar?</h2>
+      <p class="section-subtitle reveal reveal-delay-1">Desde la Ciudad de Oaxaca</p>
+      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap:32px; margin-top:16px;">
+
+        <div style="text-align:center; padding:32px 20px;" class="reveal reveal-delay-1">
+          <div style="font-size:2rem; color:var(--gold); margin-bottom:16px;">🚗</div>
+          <h4 style="font-family:var(--font-display); font-size:1.1rem; font-weight:400; margin-bottom:8px;">Auto Propio</h4>
+          <p style="font-size:0.82rem; color:var(--gray); line-height:1.8;">Tomar la carretera 175 sur dirección Miahuatlán. Desviarse en el km 28 hacia San Martín Tilcajete. Aprox. 35 min desde el centro.</p>
+        </div>
+
+        <div style="text-align:center; padding:32px 20px;" class="reveal reveal-delay-2">
+          <div style="font-size:2rem; color:var(--gold); margin-bottom:16px;">🚌</div>
+          <h4 style="font-family:var(--font-display); font-size:1.1rem; font-weight:400; margin-bottom:8px;">Transporte Público</h4>
+          <p style="font-size:0.82rem; color:var(--gray); line-height:1.8;">Colectivos desde el mercado de Abastos hacia Zaachila. Bajar en el crucero de Tilcajete. Salen cada 20 minutos.</p>
+        </div>
+
+        <div style="text-align:center; padding:32px 20px;" class="reveal reveal-delay-3">
+          <div style="font-size:2rem; color:var(--gold); margin-bottom:16px;">🏍️</div>
+          <h4 style="font-family:var(--font-display); font-size:1.1rem; font-weight:400; margin-bottom:8px;">Tour Organizado</h4>
+          <p style="font-size:0.82rem; color:var(--gray); line-height:1.8;">Varios operadores en Oaxaca incluyen Tilcajete en sus rutas artesanales. Consulta en tu hotel o agencia de viajes.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer id="site-footer"></footer>
+
+  <script src="components.js"></script>
+  <script>
+    renderHeader('visitanos.html');
+    renderFooter();
+    renderWhatsApp('529511234567', 'Hola, me gustaría reservar una visita al taller de Casa Montecino.');
+    initScrollReveal();
+
+    // Formulario
+    document.getElementById('booking-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      // Validación básica
+      const nombre = document.getElementById('nombre').value.trim();
+      const email  = document.getElementById('email').value.trim();
+      const fecha  = document.getElementById('fecha').value;
+      if (!nombre || !email || !fecha) {
+        alert('Por favor completa los campos requeridos.');
+        return;
+      }
+      // Ocultar form, mostrar éxito
+      this.style.display = 'none';
+      document.getElementById('form-success').style.display = 'block';
+    });
+
+    // Fecha mínima = hoy
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('fecha').min = today;
+  </script>
 </body>
 </html>

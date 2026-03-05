@@ -1,53 +1,269 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Alebrijes | Casa Montecino</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alebrijes | Casa Montecino</title>
+  <meta name="description" content="Catálogo completo de alebrijes y figuras talladas en madera de copal. Filtra por categoría y cotiza directamente con los artesanos.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo-text">CASA MONTECINO</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="alebrijes.html" class="active">Alebrijes</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="visitanos.html">Visítanos</a></li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <h2 class="section-title">Nuestras Piezas</h2>
-        
-        <div class="filter-group">
-            <button class="filter-btn active" data-filter="todos">Todos</button>
-            <button class="filter-btn" data-filter="misticos">Místicos</button>
-            <button class="filter-btn" data-filter="animales">Animales</button>
-        </div>
+  <header id="site-header"></header>
 
-        <div class="grid" id="alebrijes-grid">
-            <div class="card" data-cat="misticos">
-                <div class="card-img-box">IMG</div>
-                <h3>Dragón Alado</h3>
-                <p>Fantasía en tonos púrpuras.</p>
-            </div>
-            <div class="card" data-cat="animales">
-                <div class="card-img-box">IMG</div>
-                <h3>Jaguar de Montaña</h3>
-                <p>Tallado en madera de copal.</p>
-            </div>
-            <div class="card" data-cat="misticos">
-                <div class="card-img-box">IMG</div>
-                <h3>Pegaso Oaxaqueño</h3>
-                <p>Decorado con grecas finas.</p>
-            </div>
-        </div>
+  <!-- ── PAGE HERO ──────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=2000');"></div>
+    <div class="page-hero-content">
+      <p class="eyebrow">Artesanía Oaxaqueña</p>
+      <h1>Nuestros<br>Alebrijes</h1>
+    </div>
+  </div>
+
+  <!-- ── CATÁLOGO ────────────────────────────────────── -->
+  <section class="container">
+
+    <!-- Filtros -->
+    <div class="filter-bar" id="filter-bar">
+      <button class="filter-btn active" data-filter="todos">Todos</button>
+      <button class="filter-btn" data-filter="misticos">Místicos</button>
+      <button class="filter-btn" data-filter="animales">Animales</button>
+      <button class="filter-btn" data-filter="gran-formato">Gran Formato</button>
     </div>
 
-        <footer>
-        <p>&copy; 2024 Casa Montecino - Figuras Talladas en Madera. Oaxaca, México.</p>
-    </footer>
+    <!-- Grid de piezas -->
+    <div class="catalog-grid" id="catalog-grid">
 
-    <script src="script.js"></script>
+      <!-- Dragón Alado -->
+      <div class="catalog-card reveal" data-cat="misticos">
+        <div class="card-img" onclick="openCardLightbox(this)">
+          <img
+            src="https://images.unsplash.com/photo-1569411032431-07598b0012c2?q=80&w=800"
+            alt="Dragón Alado"
+            onerror="this.parentElement.innerHTML='<div class=\'placeholder-art\'>Tu imagen aquí</div>'"
+            data-caption="Dragón Alado — Místico"
+          >
+          <span class="card-tag">Místico</span>
+          <div class="card-zoom-icon">⊕</div>
+        </div>
+        <div class="card-body">
+          <h3>Dragón Alado</h3>
+          <p class="card-desc">Fantasía en tonos púrpuras y dorados. Alas extendidas con plumas pintadas a detalle.</p>
+          <div class="card-row">
+            <div>
+              <span class="card-price">MX$ 4,200 <span>c/u</span></span>
+            </div>
+            <button class="add-cart-btn"
+              data-name="Dragón Alado"
+              data-price="4200"
+              data-category="Místico"
+              data-img="https://images.unsplash.com/photo-1569411032431-07598b0012c2?q=80&w=200"
+              onclick="addToCart(this)">
+              + Cotizar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jaguar de Montaña -->
+      <div class="catalog-card reveal reveal-delay-1" data-cat="animales">
+        <div class="card-img" onclick="openCardLightbox(this)">
+          <img
+            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800"
+            alt="Jaguar de Montaña"
+            onerror="this.parentElement.innerHTML='<div class=\'placeholder-art\'>Tu imagen aquí</div>'"
+            data-caption="Jaguar de Montaña — Animal"
+          >
+          <span class="card-tag">Animal</span>
+          <div class="card-zoom-icon">⊕</div>
+        </div>
+        <div class="card-body">
+          <h3>Jaguar de Montaña</h3>
+          <p class="card-desc">Tallado en madera de copal con manchas pintadas en miniatura. Símbolo de fuerza.</p>
+          <div class="card-row">
+            <span class="card-price">MX$ 2,800 <span>c/u</span></span>
+            <button class="add-cart-btn"
+              data-name="Jaguar de Montaña"
+              data-price="2800"
+              data-category="Animal"
+              data-img="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=200"
+              onclick="addToCart(this)">
+              + Cotizar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pegaso Oaxaqueño -->
+      <div class="catalog-card reveal reveal-delay-2" data-cat="misticos">
+        <div class="card-img" onclick="openCardLightbox(this)">
+          <img
+            src="https://images.unsplash.com/photo-1590736704728-f4730bb30770?q=80&w=800"
+            alt="Pegaso Oaxaqueño"
+            onerror="this.parentElement.innerHTML='<div class=\'placeholder-art\'>Tu imagen aquí</div>'"
+            data-caption="Pegaso Oaxaqueño — Místico"
+          >
+          <span class="card-tag">Místico</span>
+          <div class="card-zoom-icon">⊕</div>
+        </div>
+        <div class="card-body">
+          <h3>Pegaso Oaxaqueño</h3>
+          <p class="card-desc">Decorado con grecas finas y flores zapotecas. Colores vibrantes y precisos.</p>
+          <div class="card-row">
+            <span class="card-price">MX$ 3,600 <span>c/u</span></span>
+            <button class="add-cart-btn"
+              data-name="Pegaso Oaxaqueño"
+              data-price="3600"
+              data-category="Místico"
+              data-img="https://images.unsplash.com/photo-1590736704728-f4730bb30770?q=80&w=200"
+              onclick="addToCart(this)">
+              + Cotizar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tortuga Cósmica -->
+      <div class="catalog-card reveal reveal-delay-1" data-cat="misticos">
+        <div class="card-img" onclick="openCardLightbox(this)">
+          <img
+            src="https://images.unsplash.com/photo-1562714099-fb0aa8bd0a4c?q=80&w=800"
+            alt="Tortuga Cósmica"
+            onerror="this.parentElement.innerHTML='<div class=\'placeholder-art\'>Tu imagen aquí</div>'"
+            data-caption="Tortuga Cósmica — Místico"
+          >
+          <span class="card-tag">Místico</span>
+          <div class="card-zoom-icon">⊕</div>
+        </div>
+        <div class="card-body">
+          <h3>Tortuga Cósmica</h3>
+          <p class="card-desc">Caparazón decorado con constelaciones y elementos del cielo oaxaqueño.</p>
+          <div class="card-row">
+            <span class="card-price">MX$ 3,100 <span>c/u</span></span>
+            <button class="add-cart-btn"
+              data-name="Tortuga Cósmica"
+              data-price="3100"
+              data-category="Místico"
+              data-img="https://images.unsplash.com/photo-1562714099-fb0aa8bd0a4c?q=80&w=200"
+              onclick="addToCart(this)">
+              + Cotizar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Coyote del Valle -->
+      <div class="catalog-card reveal reveal-delay-2" data-cat="animales">
+        <div class="card-img" onclick="openCardLightbox(this)">
+          <img
+            src="https://images.unsplash.com/photo-1597476978052-f9c38cdafdb0?q=80&w=800"
+            alt="Coyote del Valle"
+            onerror="this.parentElement.innerHTML='<div class=\'placeholder-art\'>Tu imagen aquí</div>'"
+            data-caption="Coyote del Valle — Animal"
+          >
+          <span class="card-tag">Animal</span>
+          <div class="card-zoom-icon">⊕</div>
+        </div>
+        <div class="card-body">
+          <h3>Coyote del Valle</h3>
+          <p class="card-desc">Tallado expresivo que captura el espíritu libre de los valles centrales.</p>
+          <div class="card-row">
+            <span class="card-price">MX$ 2,400 <span>c/u</span></span>
+            <button class="add-cart-btn"
+              data-name="Coyote del Valle"
+              data-price="2400"
+              data-category="Animal"
+              data-img="https://images.unsplash.com/photo-1597476978052-f9c38cdafdb0?q=80&w=200"
+              onclick="addToCart(this)">
+              + Cotizar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Águila Imperial (Gran Formato) -->
+      <div class="catalog-card reveal reveal-delay-3" data-cat="gran-formato">
+        <div class="card-img" onclick="openCardLightbox(this)">
+          <img
+            src="https://images.unsplash.com/photo-1511406361295-0a1ff814c0ce?q=80&w=800"
+            alt="Águila Imperial"
+            onerror="this.parentElement.innerHTML='<div class=\'placeholder-art\'>Tu imagen aquí</div>'"
+            data-caption="Águila Imperial — Gran Formato"
+          >
+          <span class="card-tag">Gran Formato</span>
+          <div class="card-zoom-icon">⊕</div>
+        </div>
+        <div class="card-body">
+          <h3>Águila Imperial</h3>
+          <p class="card-desc">Pieza de 80 cm de envergadura. Plumas individuales talladas y pintadas. Edición limitada.</p>
+          <div class="card-row">
+            <span class="card-price">MX$ 18,000 <span>c/u</span></span>
+            <button class="add-cart-btn"
+              data-name="Águila Imperial"
+              data-price="18000"
+              data-category="Gran Formato"
+              data-img="https://images.unsplash.com/photo-1511406361295-0a1ff814c0ce?q=80&w=200"
+              onclick="addToCart(this)">
+              + Cotizar
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /catalog-grid -->
+
+    <!-- Nota envío -->
+    <div style="text-align:center; margin-top:64px; padding-top:48px; border-top:1px solid var(--border);">
+      <p style="font-size:0.82rem; color:var(--gray); line-height:1.9; max-width:500px; margin:0 auto;">
+        Realizamos envíos a todo México y el extranjero. Embalaje especial para piezas frágiles. Coordina directamente con nosotros para piezas de gran formato.
+      </p>
+    </div>
+
+  </section>
+
+  <footer id="site-footer"></footer>
+
+  <script src="components.js"></script>
+  <script>
+    renderHeader('alebrijes.html');
+    renderFooter();
+    renderWhatsApp('529511234567', 'Hola, me interesa cotizar un alebrije de Casa Montecino.');
+    initScrollReveal();
+    Cart.renderPanel();
+    Lightbox.build();
+
+    // ── Filtros ────────────────────────────────────
+    document.getElementById('filter-bar').addEventListener('click', (e) => {
+      if (!e.target.classList.contains('filter-btn')) return;
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      e.target.classList.add('active');
+      const filter = e.target.dataset.filter;
+      document.querySelectorAll('.catalog-card').forEach(card => {
+        const match = filter === 'todos' || card.dataset.cat === filter;
+        card.style.display = match ? 'block' : 'none';
+      });
+    });
+
+    // ── Agregar al cotizador ───────────────────────
+    function addToCart(btn) {
+      Cart.add({
+        name:     btn.dataset.name,
+        price:    parseInt(btn.dataset.price),
+        category: btn.dataset.category,
+        img:      btn.dataset.img
+      });
+    }
+
+    // ── Lightbox desde catálogo ────────────────────
+    function openCardLightbox(imgBox) {
+      const imgs = [];
+      document.querySelectorAll('.card-img img').forEach(img => {
+        imgs.push({ src: img.src, caption: img.dataset.caption || img.alt });
+      });
+      const clickedImg = imgBox.querySelector('img');
+      const idx = [...document.querySelectorAll('.card-img img')].indexOf(clickedImg);
+      Lightbox.open(imgs, Math.max(0, idx));
+    }
+  </script>
 </body>
 </html>

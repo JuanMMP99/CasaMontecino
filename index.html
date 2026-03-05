@@ -1,85 +1,174 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa Montecino | Figuras Talladas en Madera</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Montecino | Figuras Talladas en Madera · Oaxaca</title>
+  <meta name="description" content="Alebrijes y figuras talladas en madera de copal, pintadas a mano en San Martín Tilcajete, Oaxaca. Arte popular mexicano de alta calidad.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo-text">CASA MONTECINO</div>
-        <ul class="nav-links">
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="alebrijes.html">Alebrijes</a></li>
-            <li><a href="galeria.html">Galería</a></li>
-            <li><a href="visitanos.html">Visítanos</a></li>
-        </ul>
-    </nav>
+  <!-- ── HEADER ─────────────────────────────────────── -->
+  <header id="site-header"></header>
 
-    <header id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Arte en Madera con Alma Oaxaqueña</h1>
-            <p>Figuras talladas a mano que cuentan historias ancestrales.</p>
-            <a href="#alebrijes" class="btn">Explorar Colección</a>
+  <!-- ── HERO ───────────────────────────────────────── -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" id="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-eyebrow">San Martín Tilcajete · Oaxaca, México</span>
+      <h1>Arte en Madera<br>con <em>Alma Oaxaqueña</em></h1>
+      <p>Figuras talladas a mano que portan la magia ancestral de los pueblos del sur.</p>
+      <div class="hero-actions">
+        <a href="alebrijes.html" class="btn btn-hero-gold">Ver Colección</a>
+        <a href="visitanos.html" class="btn btn-hero">Visitar el Taller</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── STRIP ──────────────────────────────────────── -->
+  <div class="featured-strip">
+    <div class="strip-item reveal">
+      <div class="icon">✦</div>
+      <h4>Madera de Copal</h4>
+      <p>Tallada en verde para conservar su flexibilidad y capturar la esencia de la tierra oaxaqueña.</p>
+    </div>
+    <div class="strip-item reveal reveal-delay-1">
+      <div class="icon">◈</div>
+      <h4>Pigmentos Naturales</h4>
+      <p>Cada trazo se pinta con pinceles de pelo de camello y colores derivados de plantas y minerales.</p>
+    </div>
+    <div class="strip-item reveal reveal-delay-2">
+      <div class="icon">❋</div>
+      <h4>Pieza Única</h4>
+      <p>Ningún alebrije se repite. Cada figura es un mundo propio, firmado por su artesano.</p>
+    </div>
+  </div>
+
+  <!-- ── PIEZAS DESTACADAS ───────────────────────────── -->
+  <section class="container" id="piezas">
+    <h2 class="section-title reveal">Piezas Destacadas</h2>
+    <p class="section-subtitle reveal reveal-delay-1">Colección Actual</p>
+    <div class="pieces-grid">
+
+      <div class="piece-card reveal reveal-delay-1">
+        <div class="piece-card-img">
+          <img
+            src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?q=80&w=800"
+            alt="Jaguar de Copal"
+            onerror="this.parentElement.innerHTML='<div class=\'placeholder-art\'>Tu imagen aquí</div>'"
+          >
+          <span class="piece-tag">Místico</span>
         </div>
-    </header>
-
-    <section id="alebrijes" class="container">
-        <h2 class="section-title">Nuestras Piezas</h2>
-        <div class="grid">
-            <div class="card">
-                <div class="img-placeholder">Alebrije Místico</div>
-                <h3>Jaguar de Copal</h3>
-                <p>Tallado fino con pigmentos naturales.</p>
-            </div>
-            <div class="card">
-                <div class="img-placeholder">Figura de Madera</div>
-                <h3>Venado Espiritual</h3>
-                <p>Simbolismo y tradición en cada trazo.</p>
-            </div>
-            <div class="card">
-                <div class="img-placeholder">Obra Maestra</div>
-                <h3>Dragón Alado</h3>
-                <p>Pieza de gran formato para coleccionistas.</p>
-            </div>
+        <div class="piece-card-body">
+          <h3>Jaguar de Copal</h3>
+          <p>Tallado fino con diseños geométricos zapotecas y pigmentos naturales.</p>
+          <div class="piece-card-footer">
+            <span class="piece-price">MX$ 2,800</span>
+            <a href="alebrijes.html" class="add-cart-btn">Ver más</a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <section id="galeria" class="gallery-bg">
-        <div class="container">
-            <h2 class="section-title">El Taller</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">Proceso de Tallado</div>
-                <div class="gallery-item">Pintura a Mano</div>
-                <div class="gallery-item">Madera de Copal</div>
-                <div class="gallery-item">Detalles Finales</div>
-            </div>
+      <div class="piece-card reveal reveal-delay-2">
+        <div class="piece-card-img">
+          <img
+            src="https://images.unsplash.com/photo-1590736704728-f4730bb30770?q=80&w=800"
+            alt="Venado Espiritual"
+            onerror="this.parentElement.innerHTML='<div class=\'placeholder-art\'>Tu imagen aquí</div>'"
+          >
+          <span class="piece-tag">Animales</span>
         </div>
-    </section>
-
-    <section id="visitanos" class="container">
-        <h2 class="section-title">Agenda tu Visita</h2>
-        <div class="contact-wrapper">
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15250.706249957796!2d-96.7265889!3d17.0621345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85c7223f66300001%3A0x6a053229b3a3a60a!2sOaxaca%20de%20Ju%C3%A1rez%2C%20Oax.!5e0!3m2!1ses!2smx!4v1690000000000!5m2!1ses!2smx" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-            <form id="visit-form" class="visit-form">
-                <input type="text" placeholder="Nombre Completo" required>
-                <input type="email" placeholder="Correo Electrónico" required>
-                <input type="date" required>
-                <textarea placeholder="¿Alguna pieza en especial que te interese ver?" rows="4"></textarea>
-                <button type="submit" class="btn">Enviar Solicitud</button>
-            </form>
+        <div class="piece-card-body">
+          <h3>Venado Espiritual</h3>
+          <p>Simbolismo y tradición en cada trazo. Cornamenta decorada con flores de papel.</p>
+          <div class="piece-card-footer">
+            <span class="piece-price">MX$ 3,500</span>
+            <a href="alebrijes.html" class="add-cart-btn">Ver más</a>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <footer>
-        <p>&copy; 2024 Casa Montecino - Figuras Talladas en Madera. Oaxaca, México.</p>
-    </footer>
+      <div class="piece-card reveal reveal-delay-3">
+        <div class="piece-card-img">
+          <img
+            src="https://images.unsplash.com/photo-1569411032431-07598b0012c2?q=80&w=800"
+            alt="Dragón Alado"
+            onerror="this.parentElement.innerHTML='<div class=\'placeholder-art\'>Tu imagen aquí</div>'"
+          >
+          <span class="piece-tag">Gran Formato</span>
+        </div>
+        <div class="piece-card-body">
+          <h3>Dragón Alado</h3>
+          <p>Pieza de gran formato para coleccionistas. Más de 300 horas de trabajo.</p>
+          <div class="piece-card-footer">
+            <span class="piece-price">MX$ 12,000</span>
+            <a href="alebrijes.html" class="add-cart-btn">Ver más</a>
+          </div>
+        </div>
+      </div>
 
-    <script src="index.js"></script>
+    </div>
+
+    <div style="text-align:center; margin-top: 48px;">
+      <a href="alebrijes.html" class="btn reveal">Ver Colección Completa</a>
+    </div>
+  </section>
+
+  <!-- ── SOBRE EL TALLER ─────────────────────────────── -->
+  <section style="background: var(--black); color: var(--white); padding: 0;">
+    <div style="display:grid; grid-template-columns: 1fr 1fr; min-height: 500px;">
+      <div style="height:100%; min-height:400px; overflow:hidden;">
+        <img
+          src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1200"
+          alt="Taller Casa Montecino"
+          style="width:100%; height:100%; object-fit:cover;"
+          onerror="this.style.background='#1a1a1a'"
+        >
+      </div>
+      <div style="padding: 80px 8%; display:flex; flex-direction:column; justify-content:center; gap:24px;">
+        <span style="font-size:0.7rem; letter-spacing:0.3em; text-transform:uppercase; color:var(--gold);">Nuestra Historia</span>
+        <h2 class="section-title reveal" style="text-align:left; color:var(--white); margin-bottom:0;">Tres Generaciones<br><em style="font-family:var(--font-display); font-style:italic; color:var(--gold-lt);">de Madera y Color</em></h2>
+        <p style="font-size:0.9rem; color:rgba(255,255,255,0.65); line-height:1.9;" class="reveal reveal-delay-1">
+          La familia Montecino lleva más de 60 años tallando la madera de copal que crece en los cerros de San Martín Tilcajete. Lo que comenzó como oficio del abuelo Rufino es hoy el legado que sus nietos llevan al mundo.
+        </p>
+        <p style="font-size:0.9rem; color:rgba(255,255,255,0.65); line-height:1.9;" class="reveal reveal-delay-2">
+          Cada figura pasa por meses de trabajo: el tallado inicial, el secado natural, el lijado fino y finalmente la pintura, que puede tardar semanas en una sola pieza.
+        </p>
+        <a href="galeria.html" class="btn reveal reveal-delay-3" style="border-color:var(--gold); color:var(--gold); align-self:flex-start;">Ver el Proceso</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CTA VISITA ──────────────────────────────────── -->
+  <section class="container" style="text-align:center;">
+    <h2 class="section-title reveal">¿Quieres Visitar el Taller?</h2>
+    <p class="section-subtitle reveal reveal-delay-1">Agenda una Visita Guiada</p>
+    <p style="max-width:520px; margin:0 auto 40px; font-size:0.9rem; color:var(--gray); line-height:1.9;" class="reveal reveal-delay-2">
+      Ven a conocer el proceso de creación, conversa con los artesanos y llévate una pieza directamente de manos de quien la hizo.
+    </p>
+    <a href="visitanos.html" class="btn btn-solid reveal reveal-delay-3">Reservar Visita</a>
+  </section>
+
+  <!-- ── FOOTER ─────────────────────────────────────── -->
+  <footer id="site-footer"></footer>
+
+  <script src="components.js"></script>
+  <script>
+    renderHeader('index.html');
+    renderFooter();
+    renderWhatsApp();
+    initScrollReveal();
+
+    // Hero parallax subtle
+    window.addEventListener('scroll', () => {
+      const bg = document.getElementById('hero-bg');
+      if (bg) bg.style.transform = `scale(1.05) translateY(${window.scrollY * 0.25}px)`;
+    });
+  </script>
 </body>
 </html>

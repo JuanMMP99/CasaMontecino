@@ -1,46 +1,194 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Galería | Casa Montecino</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería | Casa Montecino</title>
+  <meta name="description" content="El proceso de creación de los alebrijes de Casa Montecino: tallado, pintura y terminados en San Martín Tilcajete, Oaxaca.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo-text">CASA MONTECINO</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="alebrijes.html">Alebrijes</a></li>
-            <li><a href="galeria.html" class="active">Galería</a></li>
-            <li><a href="visitanos.html">Visítanos</a></li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <h2 class="section-title">El Proceso de Creación</h2>
-        <div class="gallery-mosaic">
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=800" alt="Proceso">
-                <div class="overlay">
-                    <p>El tallado inicial requiere visión y respeto por la madera de copal.</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1620302091741-9486c0e44288?q=80&w=800" alt="Pintura">
-                <div class="overlay">
-                    <p>Pinceles finos de pelo de camello para los detalles más pequeños.</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800" alt="Taller">
-                <div class="overlay">
-                    <p>Nuestro taller es un espacio de paz y creatividad infinita.</p>
-                </div>
-            </div>
-        </div>
+  <header id="site-header"></header>
+
+  <!-- ── PAGE HERO ──────────────────────────────────── -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1620302091741-9486c0e44288?q=80&w=2000');"></div>
+    <div class="page-hero-content">
+      <p class="eyebrow">Detrás de Cada Pieza</p>
+      <h1>El Proceso<br>de Creación</h1>
     </div>
-        <footer>
-        <p>&copy; 2024 Casa Montecino - Figuras Talladas en Madera. Oaxaca, México.</p>
-    </footer>
+  </div>
+
+  <!-- ── INTRO ──────────────────────────────────────── -->
+  <section class="container" style="padding-bottom: 40px;">
+    <h2 class="section-title reveal">Del Árbol a la Figura</h2>
+    <p class="section-subtitle reveal reveal-delay-1">Fases del Proceso Artesanal</p>
+    <p style="max-width:640px; margin:0 auto; text-align:center; font-size:0.9rem; color:var(--gray); line-height:1.9;" class="reveal reveal-delay-2">
+      Un alebrije de Casa Montecino puede tardar entre dos semanas y varios meses en completarse. Todo empieza con la selección de la madera de copal y termina con el último trazo de pintura. Cada etapa requiere paciencia, habilidad y un profundo respeto por el material.
+    </p>
+  </section>
+
+  <!-- ── MOSAICO ────────────────────────────────────── -->
+  <section class="container" style="padding-top: 0;">
+    <div class="mosaic" id="mosaic-grid">
+
+      <!-- Imagen 1 — Grande izquierda -->
+      <div class="mosaic-item reveal" data-idx="0">
+        <img
+          src="https://images.unsplash.com/photo-1596464716127-f2a82984de30?q=80&w=1200"
+          alt="Tallado inicial"
+          onerror="this.src=''; this.parentElement.style.background='#e8e3db'"
+        >
+        <div class="mosaic-overlay">
+          <div class="mosaic-caption">
+            <h4>El Tallado Inicial</h4>
+            <p>La madera de copal se corta mientras está verde para aprovechar su maleabilidad.</p>
+          </div>
+        </div>
+        <div class="mosaic-zoom">⊕</div>
+      </div>
+
+      <!-- Imagen 2 — Derecha alta -->
+      <div class="mosaic-item reveal reveal-delay-1" data-idx="1">
+        <img
+          src="https://images.unsplash.com/photo-1620302091741-9486c0e44288?q=80&w=800"
+          alt="Pinceles de detalle"
+          onerror="this.src=''; this.parentElement.style.background='#e8e3db'"
+        >
+        <div class="mosaic-overlay">
+          <div class="mosaic-caption">
+            <h4>Pinceles de Pelo de Camello</h4>
+            <p>Para los detalles más finos se usan pinceles de un solo pelo.</p>
+          </div>
+        </div>
+        <div class="mosaic-zoom">⊕</div>
+      </div>
+
+      <!-- Imagen 3 -->
+      <div class="mosaic-item reveal reveal-delay-1" data-idx="2">
+        <img
+          src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800"
+          alt="Taller de artesanos"
+          onerror="this.src=''; this.parentElement.style.background='#e8e3db'"
+        >
+        <div class="mosaic-overlay">
+          <div class="mosaic-caption">
+            <h4>El Taller</h4>
+            <p>Un espacio de silencio y concentración donde el tiempo pasa distinto.</p>
+          </div>
+        </div>
+        <div class="mosaic-zoom">⊕</div>
+      </div>
+
+      <!-- Imagen 4 — Grande -->
+      <div class="mosaic-item reveal reveal-delay-2" data-idx="3">
+        <img
+          src="https://images.unsplash.com/photo-1567360425618-1594206637d2?q=80&w=1200"
+          alt="Pigmentos naturales"
+          onerror="this.src=''; this.parentElement.style.background='#e8e3db'"
+        >
+        <div class="mosaic-overlay">
+          <div class="mosaic-caption">
+            <h4>Pigmentos Naturales</h4>
+            <p>Grana cochinilla, añil, cempasúchil: la paleta viene de la tierra misma.</p>
+          </div>
+        </div>
+        <div class="mosaic-zoom">⊕</div>
+      </div>
+
+      <!-- Imagen 5 -->
+      <div class="mosaic-item reveal reveal-delay-1" data-idx="4">
+        <img
+          src="https://images.unsplash.com/photo-1580480055273-228ff5388ef8?q=80&w=800"
+          alt="Detalle de pintura"
+          onerror="this.src=''; this.parentElement.style.background='#e8e3db'"
+        >
+        <div class="mosaic-overlay">
+          <div class="mosaic-caption">
+            <h4>Capas de Color</h4>
+            <p>Cada diseño requiere entre 8 y 15 capas de pintura para su profundidad.</p>
+          </div>
+        </div>
+        <div class="mosaic-zoom">⊕</div>
+      </div>
+
+      <!-- Imagen 6 -->
+      <div class="mosaic-item reveal reveal-delay-2" data-idx="5">
+        <img
+          src="https://images.unsplash.com/photo-1581281863883-2469417a1668?q=80&w=800"
+          alt="Secado y acabado"
+          onerror="this.src=''; this.parentElement.style.background='#e8e3db'"
+        >
+        <div class="mosaic-overlay">
+          <div class="mosaic-caption">
+            <h4>Secado Natural</h4>
+            <p>Las figuras se secan al sol de Tilcajete, sin hornos ni secadores.</p>
+          </div>
+        </div>
+        <div class="mosaic-zoom">⊕</div>
+      </div>
+
+      <!-- Imagen 7 -->
+      <div class="mosaic-item reveal reveal-delay-3" data-idx="6">
+        <img
+          src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?q=80&w=800"
+          alt="Pieza terminada"
+          onerror="this.src=''; this.parentElement.style.background='#e8e3db'"
+        >
+        <div class="mosaic-overlay">
+          <div class="mosaic-caption">
+            <h4>La Pieza Final</h4>
+            <p>Barnizada a mano y firmada. Lista para encontrar a su coleccionista.</p>
+          </div>
+        </div>
+        <div class="mosaic-zoom">⊕</div>
+      </div>
+
+    </div><!-- /mosaic -->
+
+    <!-- CTA -->
+    <div style="text-align:center; margin-top: 72px;">
+      <h3 style="font-family:var(--font-display); font-size:1.8rem; font-weight:300; margin-bottom:16px;" class="reveal">
+        ¿Quieres ver el proceso en vivo?
+      </h3>
+      <p style="font-size:0.85rem; color:var(--gray); margin-bottom:32px;" class="reveal reveal-delay-1">
+        Agenda una visita guiada al taller y conoce a los artesanos de la familia Montecino.
+      </p>
+      <a href="visitanos.html" class="btn reveal reveal-delay-2">Reservar Visita</a>
+    </div>
+
+  </section>
+
+  <footer id="site-footer"></footer>
+
+  <script src="components.js"></script>
+  <script>
+    renderHeader('galeria.html');
+    renderFooter();
+    renderWhatsApp();
+    initScrollReveal();
+    Lightbox.build();
+
+    // Recopilar imágenes del mosaico para el lightbox
+    const mosaicImages = [];
+    document.querySelectorAll('.mosaic-item').forEach(item => {
+      const img = item.querySelector('img');
+      const caption = item.querySelector('.mosaic-caption h4');
+      const sub = item.querySelector('.mosaic-caption p');
+      if (img) {
+        mosaicImages.push({
+          src: img.src,
+          caption: caption ? `${caption.textContent} — ${sub ? sub.textContent : ''}` : (img.alt || '')
+        });
+      }
+    });
+
+    document.querySelectorAll('.mosaic-item').forEach((item, idx) => {
+      item.addEventListener('click', () => {
+        Lightbox.open(mosaicImages, idx);
+      });
+    });
+  </script>
 </body>
 </html>
